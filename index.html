@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+<nav>
+    <div class="logo">E-Learning Platform</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Subjects</a>
+        <a href="#">Teacher</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="register">
+        <a href="#">Register </a>
+    </div>
+</nav>
+<section class="h-text">
+    <h1>Explore the modern teaching era</h1>
+    <br>
+    <a href="#">Visit Now</a>
+</section>
+<!-- Note: to create responsive nav bar -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Code Soft</h3>
+                <p>Code Soft is a platform dedicated to enhancing modern teaching methods with cutting-edge tools and resources for students and educators.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Subjects</a></li>
+                    <li><a href="#">Teachers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@codesoft.com</p> s
+                <p>Phone: 0251-665577</p>
+                <p>Address: 123 , ABC Street, XYZ City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Code Soft. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
